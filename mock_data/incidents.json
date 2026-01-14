@@ -1,0 +1,38 @@
+[
+  {
+    "id": "INC-1234",
+    "title": "Database connection timeouts in production",
+    "severity": "high",
+    "status": "investigating",
+    "created_at": "2026-01-14T11:30:00Z",
+    "resolved_at": null,
+    "summary": "Intermittent connection timeouts to primary PostgreSQL database. Connection pool exhaustion suspected. Increased pool size from 20 to 50, monitoring metrics.",
+    "service": "api-gateway",
+    "assigned_to": "alice",
+    "slack_thread_url": "https://slack.com/archives/C123/p1705234567"
+  },
+  {
+    "id": "INC-1235",
+    "title": "API latency spike on /users endpoint",
+    "severity": "medium",
+    "status": "resolved",
+    "created_at": "2026-01-14T10:15:00Z",
+    "resolved_at": "2026-01-14T11:00:00Z",
+    "summary": "P95 latency increased to 2s on /users endpoint. Root cause: missing index on users.email column. Added index, latency returned to normal.",
+    "service": "user-service",
+    "assigned_to": "bob",
+    "slack_thread_url": "https://slack.com/archives/C123/p1705231234"
+  },
+  {
+    "id": "INC-1236",
+    "title": "Login failures for OAuth users",
+    "severity": "low",
+    "status": "resolved",
+    "created_at": "2026-01-14T09:45:00Z",
+    "resolved_at": "2026-01-14T10:05:00Z",
+    "summary": "OAuth callback URL was returning 404 after recent deployment. Reverted nginx config change, logins restored.",
+    "service": "auth-service",
+    "assigned_to": "alice",
+    "slack_thread_url": null
+  }
+]

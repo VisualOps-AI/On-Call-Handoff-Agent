@@ -1,0 +1,57 @@
+[
+  {
+    "id": "DEP-501",
+    "service": "auth-service",
+    "version": "v2.3.1",
+    "previous_version": "v2.3.0",
+    "deployed_by": "carol",
+    "deployed_at": "2026-01-14T14:30:00Z",
+    "status": "success",
+    "commit_sha": "a1b2c3d4",
+    "changelog": "Hotfix for OAuth callback URL routing"
+  },
+  {
+    "id": "DEP-500",
+    "service": "api-gateway",
+    "version": "v1.8.0",
+    "previous_version": "v1.7.9",
+    "deployed_by": "dave",
+    "deployed_at": "2026-01-14T13:00:00Z",
+    "status": "success",
+    "commit_sha": "e5f6g7h8",
+    "changelog": "Increased connection pool size, added circuit breaker for DB calls"
+  },
+  {
+    "id": "DEP-499",
+    "service": "user-service",
+    "version": "v3.1.2",
+    "previous_version": "v3.1.1",
+    "deployed_by": "bob",
+    "deployed_at": "2026-01-14T11:15:00Z",
+    "status": "success",
+    "commit_sha": "i9j0k1l2",
+    "changelog": "Added index on users.email column for performance"
+  },
+  {
+    "id": "DEP-498",
+    "service": "notification-service",
+    "version": "v1.2.0",
+    "previous_version": "v1.1.9",
+    "deployed_by": "eve",
+    "deployed_at": "2026-01-14T10:00:00Z",
+    "status": "success",
+    "commit_sha": "m3n4o5p6",
+    "changelog": "Added Slack notification support for critical alerts"
+  },
+  {
+    "id": "DEP-497",
+    "service": "billing-service",
+    "version": "v4.0.1",
+    "previous_version": "v4.0.0",
+    "deployed_by": "frank",
+    "deployed_at": "2026-01-14T09:30:00Z",
+    "status": "success",
+    "commit_sha": "q7r8s9t0",
+    "changelog": "Fixed currency conversion edge case for JPY"
+  }
+]
